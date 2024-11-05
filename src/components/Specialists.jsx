@@ -10,10 +10,12 @@ const Specialists = () => {
             <div className='grid grid-cols-4 gap-10'>
                 {
                     specialists.map((specialist, index) => (
-                        <div key={index} className='border-[1px] rounded-2xl p-6 border-darkgray'>
+                        <div key={index} className={`border-[1px] rounded-2xl p-6 border-gray-500 ${
+                            index === 1 ? 'bg-blue text-white ' : 'text-darkgray'
+                          }`}>
                             <img src={specialist.icon} alt="" className='bg-[#E6F5FC] p-5 rounded-full' />
-                            <h2 className='font-bold text-2xl capitalize text-darkgray my-3' >{specialist.speciality}</h2>
-                            <p className='text-[#163048] text-[16px] '>{specialist.desc}</p>
+                            <h2 className='font-bold text-2xl capitalize  my-3' >{specialist.speciality}</h2>
+                            <p className=' text-[16px] '>{specialist.desc}</p>
                         </div>
                     ))
                 }
