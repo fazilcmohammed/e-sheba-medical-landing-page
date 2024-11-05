@@ -3,11 +3,11 @@ import { specialists } from '../assets/constant'
 
 const Specialists = () => {
   return (
-    <section className='px-28 py-20'>
+    <section className='px-10 lg:px-28 py-20'>
         <h1 className='capitalize text-[48px] font-bold text-[#2e2e2e]'>our consulting specialists</h1>
 
         <div className='my-10'>
-            <div className='grid grid-cols-4 gap-10'>
+            <div className='grid lg:grid-cols-4 gap-10'>
                 {
                     specialists.map((specialist, index) => (
                         <div key={index} className={`border-[1px] rounded-2xl p-6 border-gray-500 ${

@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ChooseUs = () => {
   return (
-    <section className='flex gap-10 px-28 pb-20'>
+    <section className='flex flex-col md:flex-row gap-10 px-10 md:px-28 pb-20'>
         <div>
             <img src={surgeryImg} alt="" />
         </div>

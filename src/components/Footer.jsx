@@ -6,8 +6,8 @@ import map from "../assets/map.svg";
 
 const Footer = () => {
   return (
-    <footer className="px-28 py-20 bg-blue">
-      <div className="grid grid-cols-3 gap-20">
+    <footer className="px-10 md:px-28 py-20 bg-blue">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         <div>
           <h2 className="text-2xl text-white font-semibold">E-sheba</h2>
           <p className="text-[16px] font-normal text-white my-6">
