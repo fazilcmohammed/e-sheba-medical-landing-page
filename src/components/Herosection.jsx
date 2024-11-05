@@ -6,16 +6,18 @@ import location_icon from "../assets/location.svg";
 import user_icon from "../assets/user.svg";
 import { abouts } from "../assets/constant";
 import doctor_img from '../assets/doc_img.svg'
+import underline from '../assets/underline.svg'
 
 const Herosection = () => {
   return (
     <section className="bg-hero_bg pt-20  ">
       <div className="flex items-center px-28">
         <div>
-          <h1 className="text-darkgray text-[64px] font-bold text-left capitalize">
-            Find & Search Your <br /> <span>favourite</span> doctor
+          <h1 className="text-darkgray text-[64px] font-bold text-left capitalize leading-tight">
+            Find & Search Your <br /> <span className="text-blue">favourite</span> doctor
           </h1>
-          <p className="my-5">
+          <img src={underline} alt="" />
+          <p className="my-7 font-normal text-xl">
             Discover and Connect with the Right Healthcare Expert: <br /> Find &
             Search Your Favorite Doctor for Personalized Care
           </p>
@@ -41,7 +43,7 @@ const Herosection = () => {
           </div>
         </div>
         <div>
-          <div className="bg-lightblue w-[600px] h-[300px] absolute bottom-[50px] right-0 rounded-t-full"></div>
+          <div className="bg-lightblue w-[600px] h-[300px] absolute bottom-[37px] right-0 rounded-t-full"></div>
         </div>
       </div>
 
@@ -65,7 +67,7 @@ const Herosection = () => {
           ))}
         </div>
         <div className="">
-            <img src={doctor_img} alt="" className="absolute w-[700px] -bottom-[70px] left-[600px]"/>
+            <img src={doctor_img} alt="" className="absolute w-[700px] -bottom-[83px] left-[600px]"/>
         </div>
       </div>
     </section>
