@@ -47,7 +47,7 @@ const Herosection = () => {
         </div>
       </div>
 
-      <div className="bg-blue px-28 flex">
+      <div className="bg-blue px-28 py-6 flex">
         <div className="flex items-center">
           {abouts.map((about, index) => (
             <div key={index} className=" flex items-center">
@@ -55,7 +55,7 @@ const Herosection = () => {
                 <h1 className="text-[64px] font-bold text-white">
                   {about.count}
                 </h1>
-                <p className="text-white text-center text-[16px] font-light">
+                <p className="text-white text-center text-[16px] -mt-3 font-light">
                   {about.facility}
                 </p>
               </div>
@@ -67,7 +67,7 @@ const Herosection = () => {
           ))}
         </div>
         <div className="">
-            <img src={doctor_img} alt="" className="absolute w-[700px] -bottom-[83px] left-[600px]"/>
+            <img src={doctor_img} alt="" className="absolute w-[700px] -bottom-[120px] left-[600px]"/>
         </div>
       </div>
     </section>
