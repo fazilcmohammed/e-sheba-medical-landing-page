@@ -51,11 +51,11 @@ const Herosection = () => {
         <div className="flex flex-col lg:flex-row items-center">
           {abouts.map((about, index) => (
             <div key={index} className=" flex items-center">
-              <div className="">
+              <div className="flex flex-col items-center justify-center gap-8">
                 <h1 className="text-[40px] md:text-[64px] font-bold text-white">
                   {about.count}
                 </h1>
-                <p className="text-white text-center text-[16px] -mt-3 font-light">
+                <p className="text-white text-center text-[16px] -mt-8 md:-mt-3 font-light">
                   {about.facility}
                 </p>
               </div>
@@ -67,7 +67,7 @@ const Herosection = () => {
           ))}
         </div>
         <div className="">
-            <img src={doctor_img} alt="" className=" lg:absolute lg:w-[700px] lg:-bottom-[120px] lg:left-[600px]"/>
+            <img src={doctor_img} alt="" className="hidden md:block lg:absolute lg:w-[700px] lg:-bottom-[120px] lg:left-[600px]"/>
         </div>
       </div>
     </section>
